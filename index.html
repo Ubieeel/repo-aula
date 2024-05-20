@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>GreenWave</title>
+</head>
+
+<body>
+    <header>
+        
+        <div class="divisor"></div>
+        <div class="header-body">
+            <img src="img/Logo icon.png" class="logotipo">
+            <a href="index.html"><img src="img/titulo-green.png" class="titulo"></a>
+            <img src="img/menus do header.png" class="menus-header">
+
+            <!--   Login   -->
+            <div class="clicar-no-login" onclick="AbrirLogin()"></div>
+            <div class="popUpLogin" id="login">
+                <div id="boxlogin">
+
+                <img id="iconpop" src="img/Logo icon.png" alt="Logo icon">
+                <h1 id="logintxt">Login</h1>
+
+                <!-- linha 2 -->
+                <label for="email"><b>Email</b></label>
+                <input  type="text" placeholder="Email..." name="email" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Senha..." name="psw" required>
+                <button type="submit" class="btn" onclick="window.location.reload()">Login</button>
+                <button type="button" class="btnCancelar" onclick="FecharLogin()">Fechar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Nav -->
+        <div class="nav-menu">
+            <ul>
+                <li>PÁGINA INICIAL</li>
+                <li>FEMININO <img src="img/setinha-pra-baixo.png" class="setinha-f"></li>
+                <li>MASCULINO <img src="img/setinha-pra-baixo.png" class="setinha-m"></li>
+                <li>SUSTENTABILIDADE</li>
+                <li>CONTATO</li>
+                <li>SOBRE NÓS</li>
+            </ul>
+            <div>
+                <input type="text" class="menu-de-busca" placeholder="O que deseja buscar?">
+                <img src="img/lupinha.png" class="lupa">
+            </div>
+        </div>
+    </header>
+
+    <h6 class="quemsomos"><b>Quem somos?</b></h6>
+            <p class="quemsomosEX">GreenWave é uma marca de moda praia sustentável feita para durar :)</p>
+
+    <!-------------------- Carrossel ------------------------------------>
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <input type="radio" name="btn-radio" id="radio4">
+            <input type="radio" name="btn-radio" id="radio5">
+
+           <div class="slide-box primeiro">
+            <img src="img/carrosel1.jpg" alt="moda 1">
+           </div>
+
+           <div class="slide-box">
+            <img src="img/carrosel2.jpg" alt="moda 2">
+           </div>
+
+           <div class="slide-box">
+            <img src="img/carrosel3.jpg" alt="moda 3">
+           </div>
+
+           <div class="slide-box">
+            <img src="img/csrrosel4.jpg" alt="moda 4">
+           </div>
+
+           <div class="slide-box">
+            <img src="img/carrosel5.jpg" alt="moda 5">
+           </div>
+
+           <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+           </div>
+           
+           <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+           </div>
+        </div>
+    </section>
+
+
+               <!-- Inicio site -->
+
+
+    <div class="box">
+        <div class="container">
+            
+            <h6 class="principais_buscas"><b>Principais Buscas</b></h6>
+
+            <ul class="galeria">
+                <li>
+                    <a href="#"><img src="img/oculos.png"></a>
+                    <div class="detalhes">
+                        <h3 class="produto">Óculos</h3>
+                        <h2 class="preço">R$ 180,00</h2>
+                        <p class="parcelas">ou 3x R$ 90,00</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/bermuda.png"></a>
+                    <div class="detalhes">
+                        <h3 class="produto">Bermuda</h3>
+                        <h2 class="preço">R$ 240,00</h2>
+                        <p class="parcelas">ou 3x R$ 80,00</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/biquini_bege.png"></a>
+                    <div class="detalhes">
+                        <h3 class="produto">Biquíni</h3>
+                        <h2 class="preço">R$ 120,00</h2>
+                        <p class="parcelas">ou 3x R$ 40,00</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/chapeu_verde.png"></a>
+                    <div class="detalhes">
+                        <h3 class="produto">Chapéu</h3>
+                        <h2 class="preço">R$ 90,00</h2>
+                        <p class="parcelas">ou 3x R$ 30,00</p>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <ul class="galeria_2">
+                <li>
+                    <a href="#"><img src="img/biquinis.png"></a>
+                    <div class="detalhes">
+                        <h3 class="biquinis">Biquínis</h3>
+                        <h2 class="info-bq">Conheça nossos biquínis sustentáveis</h2>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/acessorios.png"></a>
+                    <div class="detalhes">
+                        <h3 class="acessorios">Acessórios</h3>
+                        <h2 class="info-ac">Aproveite também nossos acessórios!</h2>
+                    </div>
+                </li>
+            </ul>
+            <h6 class="principais_buscas">Os mais vendidos</h6>
+            <ul class="galeria-carrossel">
+                <li>
+                    <a href="#"><img src="img/biquini_verde_agua.png"></a>
+                    <div class="detalhes">
+                        <h3 class="produto">Biquini Acqua</h3>
+                        <h2 class="preço">R$ 210,00</h2>
+                        <p class="parcelas">ou 3x R$ 70,00</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/bolsa_sereia.png"></a>
+                    <div class="detalhes">
+                        <h3 class="produto">Bolsa Sereia</h3>
+                        <h2 class="preço">R$ 150,00</h2>
+                        <p class="parcelas">ou 3x R$ 50,00</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/oculos_coco_verde.png"></a>
+                    <div class="detalhes">
+                        <h3 class="produto">Óculos Green</h3>
+                        <h2 class="preço">R$ 270,00</h2>
+                        <p class="parcelas">ou 3x R$ 90,00</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/bolsa_palha_redonda.png"></a>
+                    <div class="detalhes">
+                        <h3 class="produto">Bolsa Palha</h3>
+                        <h2 class="preço">R$ 180,00</h2>
+                        <p class="parcelas">ou 3x R$ 60,00</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="informaçoes-cinza">
+        <div>
+            <ul>
+                <li><img src="img/icon-enviamos.png"></li>
+                <li>
+                    <p><b><span class="titulos-info">Enviamos para todo Brasil</span></b><br>os produtos chegam onde
+                        você estiver, e bem rápido!</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><img src="img/icon-trocamos.png"></li>
+                <li>
+                    <p><b><span class="titulos-info">Primeira troca gratuita!</span></b><br>Não se preocupe se precisar
+                        trocar de tamanho ou cor, o primeiro envio é por nossa conta!</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><img src="img/icon-casa.png"></li>
+                <li>
+                    <p><b><span class="titulos-info">Bem-estar</span></b><br>Você merece um pacotinho de amor e leveza,
+                        conta com a gente :)</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><img src="img/icon-sustentável.png"></li>
+                <li>
+                    <p><b><span class="titulos-info">Cuidamos da natureza</span></b><br>Todas as etapas de venda,
+                        prezamos pela sustentabilidade e cuidamos com o meio ambiente.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <!-- no footerBox vai ter background image -->
+        <div class="footerBox">
+          <!-- footerContent vai ser uma caixa no meio da imagem contedo demais infos -->
+          <div class="footerContent">
+            <div class="footerSocial">
+              <div class="socialText">
+                <h3>Follow</h3>
+              </div>
+              <div class="socialIcons">
+                <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok fa-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+              </div>
+              <div class="socialMenu">
+                <ul class="list1">
+                  <li><a href="#">Feminino</a></li>
+                  <li><a href="#">Masculino</a></li>
+                  <li><a href="#">Sustentabilidade</a></li>
+                </ul>
+                <ul class="list2">
+                  <li><a href="#">Contato</a></li>
+                  <li><a href="#">Sobre Nós </a></li>
+                  <li><a href="#">Voltar ao Topo</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footerPayment">
+              <div class="paymentSubscription">
+                <h3>Receba ofertas e descontos exclusivos!</h3>
+                <form action="#">
+                  <input
+                    type="email"
+                    name="email"
+                    id="subscriptionEmail"
+                    placeholder="E-mail"
+                  />
+                  <button type="submit" id="submitButton">Cadastrar</button>
+                </form>
+              </div>
+              <div class="paymentCards">
+                <p>Formas de Pagamento</p>
+                <div class="paymentIcons">
+                  <a href="#"><i class="fa-solid fa-barcode fa-2xl"></i></a>
+                  <a href="#"><i class="fa-brands fa-paypal fa-2xl"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-pay fa-2xl"></i></a>
+                  <a href="#"
+                    ><i class="fa-brands fa-cc-diners-club fa-2xl"></i
+                  ></a>
+                  <a href="#"><i class="fa-brands fa-cc-amex fa-2xl"></i></a>
+                  <a href="#"
+                    ><i class="fa-brands fa-cc-mastercard fa-2xl"></i
+                  ></a>
+                  <a href="#"><i class="fa-brands fa-cc-visa fa-2xl"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+          <h6 id="textoFinal">Copyright GreenWave - 000000002020001 - 2024. Todos os direitos reservados.</h6>
+   
+      </footer>
+    <!-- link para FontAwesome -->
+    <script
+    src="https://kit.fontawesome.com/b7057748ce.js"
+    crossorigin="anonymous"></script>
+
+    <!-- lik java -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
